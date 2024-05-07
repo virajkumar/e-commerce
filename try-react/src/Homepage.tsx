@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import NavBar from "./NavBar";
+import NavBar from "./NavBar/NavBar";
 import SalePoster from "./SalePoster";
 import SlideShow from "./SlideShow";
 import Footer from "./Footer";

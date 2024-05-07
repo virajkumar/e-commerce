@@ -10,20 +10,21 @@
     display: flex;
     padding: 10px 10px 10px 10px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #logo{
     width: 50px;
+    flex: 1;
 }
 
-#home {
+.bar-element {
+    max-width: fit-content;
     padding: 10px 10px;
     font-size: 25px;
     color:chocolate;
-}    
-
-#about-us {
-    padding: 10px 10px;
-    font-size: 25px;
-    color:chocolate;
-}    
+    display: flex;
+    flex: 1;
+}
