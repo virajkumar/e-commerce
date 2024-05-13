@@ -1,23 +1,10 @@
-#search-bar-2 {
-    height: 38px;
-    width: 50%;
-    font-size: 20px;
-    left: 280px;
-    top: 17px;
-    position: fixed;
-    border-radius: 10px;
-    flex: 1;
+#flexContainer {
+    display: flex;
 }
 
-#submit-button {
-    z-index: 1;
-    width: 50px;
-    height: 44px;
-    border-radius: 10px;
-    position: absolute;
-    left: 700px;
-    top: 17px;
-    flex: 2;
+#search-bar-2 {
+    height: 39px;
+    font-size: 20px;
 }
 
 #search-bar-2:placeholder-shown {
@@ -28,6 +15,9 @@
     box-shadow: 0px 0px 10px 4px rgba(221, 161, 71, 0.596);
 }
 
-#flexContainer {
-    display: flex;
+#submit-button {
+    width: 44px;
+    height: 44px;
+    background: url(search-button.png);
+    border-color: white;
 }

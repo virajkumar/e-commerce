@@ -1,10 +1,19 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import SearchBar from './SearchBar';
 import './NavBar.css';
 import HomeButton from './HomeButton';
 import AboutUsButton from './AboutUsButton';
+import StoreButton from './StoreButton';
+import CartButton from './CartButton';
+import OrdersButton from './OrdersButton';
+import AccountOrLoginButton from './AccountOrLoginButton';
+
+import { useDispatch } from 'react-redux';
 
 const NavBar: FC = () => {
+    //const [isGuest, setIsGuest] = useState(true);
+    //const dispatch = useDispatch();
+
     return (<div>
         <div id="bar">
             <div>
@@ -14,25 +23,22 @@ const NavBar: FC = () => {
                 <HomeButton />
             </div >
             <div id="about-us" className="bar-element">
-                About Us
+                <AboutUsButton />
             </div>
             <div id="store" className="bar-element">
-                Store
+                <StoreButton />
             </div>
-            {/* <div id="search-bar" className="bar-element">
-                    {/*<SearchBar />
-                </div> */}
+            <div id="search-bar" className="bar-element">
+                <SearchBar />
+            </div>
             <div id="cart" className="bar-element">
-                Cart
+                <CartButton />
             </div>
             <div id="account" className="bar-element">
-                Account
+                <OrdersButton />
             </div>
             <div id="signup" className="bar-element">
-                Signup
-            </div>
-            <div id="login" className="bar-element">
-                Login
+                <AccountOrLoginButton />
             </div>
         </div>
     </div>);

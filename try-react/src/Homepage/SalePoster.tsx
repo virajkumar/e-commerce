@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import "./SalePoster.css"
 
 const SalePoster: FC = () => {
-    return (<div>
-        <Link to="/store">
-            <div id="store-link">40% sale</div>
-        </Link>
+    return (<div id="sale-poster">
     </div>);
 };
 export default SalePoster;

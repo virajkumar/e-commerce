@@ -1,16 +1,12 @@
 import React, { FC } from "react";
 import { Link } from "react-router-dom";
-import "./HomeButton.css";
+import "./AboutUsButton.css";
 
-const HomeButton: FC = () => {
-
-    // const handleClick = (e) => {
-
-    // }
-    return (<Link to="/" style={{ textDecoration: 'none'}}>
-    <div id="homepage-button" /*onClick={handleClick}*/>Home</div>
+const AboutUsButton: FC = () => {
+    return (<Link to="/about-us" style={{ textDecoration: 'none'}}>
+    <div id="aboutus-button">About Us</div>
     </Link>
     )
 };
 
-export default HomeButton;
+export default AboutUsButton;

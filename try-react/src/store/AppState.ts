@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-//import { UserReducer } from "./UserReducer";
-//import { PostReducer } from "./PostReducer";
+import { UserReducer } from "./UserReducer";
+import { ProductsReducer } from "./ProductsReducer";
 export const rootReducer = combineReducers({
-    //user: UserReducer,
-    //post: PostReducer
+    user: UserReducer,
+    reducedProducts: ProductsReducer
 });
 export type AppState = ReturnType<typeof rootReducer>;
